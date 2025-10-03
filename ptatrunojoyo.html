@@ -2,27 +2,45 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog PTA</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>📚 Blog PTA</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="berita.html">Berita</a>
-    </nav>
+    <div class="container">
+      <h1>📚 Blog PTA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="berita.html">Berita</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>Daftar Abstrak PTA</h2>
-    <input type="text" id="search-pta" placeholder="🔍 Cari abstrak PTA..." class="search-bar">
-    <div id="pta-container" class="blog-list"></div>
+    <section class="pta-section">
+      <h2>Daftar Abstrak PTA</h2>
+
+      <label for="search-pta" class="sr-only">Cari abstrak PTA</label>
+      <input 
+        type="text" 
+        id="search-pta" 
+        placeholder="🔍 Cari abstrak PTA..." 
+        class="search-bar"
+        aria-label="Pencarian abstrak PTA"
+      >
+
+      <div id="pta-container" class="blog-list">
+        <!-- Data PTA akan dimuat dari script.js -->
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Blog Data</p>
+    <p>&copy; 210411100242 - Muhammad Faisal Avicenna</p>
   </footer>
 </body>
 </html>
